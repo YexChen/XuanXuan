@@ -1,0 +1,131 @@
+/*全局设置*/
+@media(min-width: 992px){
+.container{
+	width : 970px;
+}
+}
+
+body{
+	text-align : center;
+	font-family : 微软雅黑;
+}
+
+/* 细节设置 */
+
+
+
+
+
+
+
+/*导航条设置 */
+.navbar-wrapper{
+	background-color : #e6e6e6;
+		box-shadow: 0 0 10px #999999;
+}
+
+.nav > li,
+.collapse > ul > form > .form-group > input,
+.collapse > ul > form > button,
+.navbar-brand,{
+	margin : 10px;
+}
+
+
+
+
+
+/*文章主内容设置 */
+.blog-title{
+	margin : 15px;
+	text-align : left;
+}
+
+.blog-subtitle{
+	color : #8c8c8c;
+	margin : 10px;
+}
+
+.blog-content{
+	font-size : 18px;
+	line-height : 28px;
+	font-family: "微软雅黑";
+	text-align : left;
+}
+
+.blog-content>img{
+	max-width : 100%;	
+}
+
+
+.blog-side{
+		line-height : 28px;
+}
+
+@media(max-width: 768px){
+	.blog-title{
+		font-size : 7.5vw;
+	}
+	.blog-subtitle{
+		font-size : 5.5vw;
+	}
+}
+
+@media(min-width : 768px){
+.page-center > .container{
+	width : 90%;
+}
+}
+
+@media(min-width : 992px){
+	.blog-side{
+		margin-top : 90px;
+}
+}
+
+/*文章尾部设置*/
+.page-foot{
+	margin-top : 60px;
+}
+.pull-right{
+	margin-right : 40px;
+}
+
+
+/*评论区域设置*/
+.comment-area{
+	text-align : left;
+
+}
+
+
+.comment-main{
+	background-color : #bfbfbf;
+	border-radius : 5px;
+	-webkit-border-radius : 5px;
+	-moz-border-radius : 5px;
+	min-height : 100px;
+	text-align : left;
+	text-indent: 2em;
+	padding-top : 0.2em;
+	padding-bottom : 0.2em;
+}
+
+.comment-head > p > lead{
+	color :  #ff9900;
+}
+
+.comment-head > p > a,
+.comment-head > p > a:hover,
+.comment-head > p > a:focus{
+	color : black;
+}
+
+.divider-dashed{
+	border-top: 2px dashed #8c8b8b
+}
+
+/*summernote 区域设置 */
+.comment-create{
+	margin-top : 20px;
+}

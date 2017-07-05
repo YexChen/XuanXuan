@@ -1,0 +1,9 @@
+/* 全页面基底 */
+@basic-color : #5a5a5a;
+
+body{
+	padding : 40px;
+	background-color: @basic-color;
+}
+
+/* 导航条设置 */

@@ -1,0 +1,86 @@
+
+/* 全局基础设置 */
+p{
+	font-size : 20px;
+}
+
+.container{
+	width : 970px;
+}
+
+
+
+
+
+/* 导航条设置 */
+.nav >li+li  {
+	padding-left : 20px;
+}
+
+
+
+/* 大标题设置 */
+.blog-head{
+	margin-top : 90px;
+}
+
+
+.blog-head > h1{
+	font-size : 50px;
+}
+
+lead{
+	font-size : 20px;
+	color : silver;
+}
+
+
+blockquote{
+	color : #999999
+}
+
+.col-md-8 > ul > li{
+	font-size : 18px;
+	color :#808080;
+}
+
+/* 按钮设置 */
+.buttons > .btn{
+	margin-left : 20px;
+	width : 100px;
+	color : #6666ff;
+	background-color: white;
+	border-color:  #cccccc;
+	border-radius : 20px;
+	margin-top : 20px;
+}
+
+/* 右边slidebar设置 */
+.sildebar-module-inset{
+	background-color : #f2f2f2;
+	border-radius : 8px;
+}
+
+.sildebar-module-inset > p{
+	font-size : 15px;
+	padding-bottom : 20px;
+}
+
+.sildebar-module-inset > h4{
+	font-size : 15px;
+	padding-top : 20px;
+}
+
+.sildebar-module-inset{
+	padding-left : 15px;
+	padding-right : 15px;
+	margin : 0 -15px 15px;
+}
+
+.slidebar-module{
+	margin-top : 30px;
+}
+
+.archieves{
+	margin-left : 10px;
+}

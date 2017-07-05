@@ -1,0 +1,159 @@
+/*修改所有a标签 和按钮*/
+@default-color:#fff;
+@background-color:#333;
+
+a,
+a:hover,
+a:focus{
+	color : @default-color;
+}
+
+.btn-default,
+.btn-default:hover,
+.btn-default:focus{
+	color : #333;
+	background-color : @default-color;
+	text-shadow : none;
+	border : 1px solid @default-color;
+}
+
+/* 基本修改 */
+html,
+body{
+	background-color: #333;
+	width : 100%;
+	height : 100%;
+}
+
+body{
+	color : @default-color;
+	text-align : center;
+	text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+/* 细节修改 */
+.site-wrapper{
+	width : 100%;
+	height : 100%;
+	min-height : 100%;
+	display :table;
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+  box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+}
+
+.site-wrapper-inner{
+	display : table-cell;
+	vertical-align : top;
+}
+
+.cover-container{
+	margin-left : auto;
+	margin-right : auto;
+}
+
+.inner {
+	padding : 30px;
+}
+
+.masthead-brand {
+	margin-top : 10px;
+	margin-bottom : 10px;
+}
+
+.masthead-nav > li{
+	display : inline-block;
+}
+
+.masthead-nav > li + li{
+	margin-left : 20px;
+}
+
+.masthead-nav >li > a{
+	padding-left : 0;
+	padding-right : 0;
+	color : @default-color;
+	color : rgba(255,255,255,0.75);
+	border-bottom : solid 1px transparent;
+	background-color : transparent;
+	font-weight : bold;
+	font-size: 16px;
+}
+
+.masthead-nav >li > a:hover,
+.masthead-nav >li > a:focus{
+	background-color :transparent;
+	border-bottom-color : #a9a9a9;
+	border-bottom-color: rgba(255,255,255,.25);
+}
+
+.masthead-nav >.active  >a,
+.masthead-nav >.active  >a:hover,
+.masthead-nav >.active  >a:focus{
+	border-bottom-color : @default-color;
+}
+
+@media(min-width : 768px){
+	.masthead-brand{
+	float : left;
+}
+
+.masthead-nav{
+	float : right;
+}
+}
+
+/* 封皮制作 */
+
+.cover{
+	padding : 0 20px;
+}
+
+.cover,
+.btn-lg{
+	color : #999;
+	color : rgba(255,255,255,.5);
+}
+
+.btn{
+	font-size : 18px;
+	font-weight: bold;
+}
+/* 底部文字 */
+.cover-foot > p {
+  color: #999; /* IE8 proofing */
+  color: rgba(255,255,255,.5);
+}
+
+
+
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .cover-foot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .cover-foot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+
+@media (min-width: 992px) {
+  .masthead,
+  .cover-foot,
+  .cover-container {
+    width: 700px;
+  }
+}
+

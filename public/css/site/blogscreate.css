@@ -1,0 +1,70 @@
+/* 全局设置 */
+html,body{
+	font-family : '微软雅黑';
+	height : 100%;
+	width : 100%;
+	vertical-align: center;
+}
+
+.page-wrapper{
+	box-shadow: inset 0 0 100px #cccccc;
+	height : 100%;
+	width : 100%;
+}
+
+
+
+
+
+
+/* 细节设置 */
+
+
+
+
+
+
+
+
+
+/* 导航条设置 */
+.nav,.navbar-header{
+	padding-top : 10px;
+}
+
+.navbar{
+	text-align : center;
+}
+
+
+
+
+
+
+
+
+
+
+/* 主文本区域设置 */
+.form-group > .container > {
+	padding-left : 0px;
+	padding-right : 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 页尾设置 */
+@media(min-width : 768px){
+.page-foot{
+	margin-top : 80px;
+}
+}

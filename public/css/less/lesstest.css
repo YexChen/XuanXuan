@@ -1,0 +1,76 @@
+
+@blue:#2403FF;
+/* 基本参数设置 */
+.test1{
+	color : @blue;
+}
+
+/* 套用类 */
+.test2{
+	.test1;
+}
+
+/* 类函数 ()内为默认值 */ /* 参数为空经过编译后会在css中“隐身” */
+.margin(@mar : 10px){
+	margin-top: @mar;
+	margin-bottom : @mar;
+}
+
+.test3{
+	.margin(8px);
+}
+
+/* @arguments 变量 */
+.box-shadow(@x : 0,@y : 0,@blur : 0,@color : #000){
+	box-shadow : @arguments;
+	-moz-box-shadow : @arguments;
+	-webkit-box-shadow : @arguments;
+}
+
+.test4{
+	width : 80px;
+	.box-shadow(2px,5px);
+}
+
+/* switch 匹配器 */
+.pipei(darker,@color){
+	color : darken(@color,30%);
+} 
+
+.pipei(lighter,@color){
+	color : lighten(@color,30%);
+}
+
+.pipei(@_,@color){
+	display : block;
+}
+
+.test5{
+	.pipei(darker,#233333);
+}
+
+.test6{
+	.pipei(lighter,#233333);
+}
+
+/* 条件 */
+
+.fontColor(@a) when (lightness(@a) >= 50%){
+	color : red;
+}
+
+.fontColor(@a) when (lightness(@a) < 50%){
+	color : blue;
+}
+
+.test7{
+	.fontColor(#dddddd);
+}
+
+.test8{
+	.fontColor(#111111);
+}
+
+/* 条件间"，"表示且 */
+/* 可以使用iscolor,isnumber,isstring,iskeyword,isurl,ispixel,ispercentage,isem等函数 
+/* 可以使用 and 和 not */

@@ -1,0 +1,128 @@
+/* 全局设置 */
+
+body{
+	-webkit-box-shadow: inset 0 0 100px #86592d;
+    box-shadow: inset 0 0 100px #86592d;
+    text-align : center;
+    height : 100%;
+    font-family : 微软雅黑;
+    text-align : center;
+    background-color: #bf8040;
+}
+
+page-wrapper{
+	height : 100%;
+}
+
+/*细节设置 */
+
+
+a,
+{
+	color :  #4d4d4d;
+}
+a:hover,
+a:focus{
+	color : #4d4d4d;
+	border-bottom: 2px solid #4d4d4d;
+	text-decoration: none;
+}
+
+
+/* 文字设置 */
+.page-top{
+	padding-top : 20px;
+	padding-bottom : 20px;
+}
+.page-top > .container > p{
+	font-size : 25px;
+}
+@media(min-width : 768px){
+.page-top > .container > p{
+	font-size : 50px;
+	margin-left : auto;
+	padding-left : 10%;
+}
+}
+
+@media(min-width : 992px){
+.page-top > .container > p{
+	font-size : 50px;
+	margin-left : auto ;
+}
+
+}
+
+
+/* 气泡设置 */
+
+@media(max-width : 700px){
+	.bubbles > .row > .col-sm-4 >img{
+		width : 200px;
+		height : 200px;
+		margin : 0 auto;
+	}
+	.bubbles > .row > .col-sm-4{
+		margin-bottom : 20px;
+	}
+}
+
+@media(min-width : 701px){
+	.bubbles,
+	.page-foot{
+		width : 90%;
+		margin : auto;
+	}
+	.page-top{
+		width : 90%;
+		}
+	.second-row{
+		margin-top : 50px;
+	}
+	.bubbles > .row > .col-sm-4 >img{
+		height : 140px;
+	}
+}
+
+@media(min-width : 992px){
+	.bubbles,
+	.page-foot{
+		width : 800px;
+		margin : auto;
+	}
+	.page-top{
+		width : 800px;
+		}
+	.second-row{
+		margin-top : 50px;
+	}
+	.bubbles > .row > .col-sm-4 >img{
+		height : 170px;
+		width : auto;
+	}
+}
+
+@media(max-width: 768px){
+.image_bottom{
+	font-family: "微软雅黑";
+	font-size : 7.5vw;
+}
+}
+
+@media(min-width: 768px){
+.image_bottom{
+	font-family: "微软雅黑";
+	font-size : 3.5vw;
+}
+}
+
+@media(min-width: 992px){
+.image_bottom{
+	font-family : "微软雅黑";
+	font-size : 20px;
+}
+}
+/* 底部设置 */
+.page-foot{
+	padding-top : 50px;
+}

@@ -1,0 +1,152 @@
+/*
+全局设置
+ */
+
+/*链接 */
+a,
+a:focus,
+a:hover{
+  color : #fff;
+}
+
+/* 自定义按钮 */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus{
+  color : #333;
+  text-shadow : none; /* 消除从body继承的影响 */
+  background-color: #fff;
+  border : 1px solid #fff;
+}
+
+/* 基本架构 */
+html,
+body{
+  height : 100%;
+  background-color : #333;
+}
+body{
+  color : #fff;
+  text-align : center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+/* 细节设置 */
+.site-wrapper{
+  display:table; /* 变成块级元素 前后有换行符*/
+  width : 100%;
+  height : 100%;
+  min-height : 100%;
+  -webkit-box-shadow : inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow : inset 0 0 100px rgba(0,0,0,.5);
+}
+
+.site-wrapper-inner{
+  display : table-cell; /* 变成一个表格单元格显示 (类似td) */
+  vertical-align: top;
+}
+
+.cover-container{
+  margin-left:auto;
+  margin-right:auto;
+}
+/* 为了缩进 */
+.inner{
+  padding : 30px;
+}
+
+/* 标题 */
+.masthead-brand{
+  margin-top : 10px;
+  margin-bottom : 10px;
+  margin-left : 10px;
+
+}
+
+.masthead-nav > li {
+  display : inline-block;/* 类似<table>的内联表格来显示 */
+}
+.masthead-nav > li +li {
+  margin-left : 20px;
+}
+
+.masthead-nav >li > a{
+  padding-right: 0;
+  padding-left: 0;
+  font-size : 16px;
+  font-weight : bold;
+  color : #fff /* IE8 校对 */;
+  color : rgba(255,255,255,.75);
+  border-bottom : 2px solid transparent;
+}
+
+.masthead-nav>li>a:hover,
+.masthead-nav>li>a:focus{
+  background-color : transparent;
+  border-bottom-color : #a9a9a9;
+  border-bottom-color : rgba(255,255,255,.25)
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus{
+  color : #fff;
+  border-bottom-color:  #fff;
+}
+
+@media (min-width : 768px){
+  .masthead-brand{
+    float : left;
+  }
+  .masthead-nav{
+    float : right;
+  }
+}
+
+/* 封面 */
+.cover{
+  padding : 0 20px;
+}
+.cover .btn-lg{
+  padding : 10px 20px;
+  font-weight : bold;
+}
+
+.btn-lg{
+  font-weight: bold;
+}
+/* 页脚 */
+.mastfoot{
+  color : #999;
+  color : rgba(255,255,255,.5);
+}
+
+/* 附件和中央 */
+@media(min-width : 768px){
+  /* 拉出页首和页尾 */
+  .masthead{
+    position : fixed;
+    top : 0;
+  }
+  .mastfoot{
+    position : fixed;
+    bottom : 0;
+  }
+  /* 居中对齐 */
+  .site-wrapper-inner{
+    vertical-align: middle;
+  }
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+
+}
+
+@media(min-width: 992px){
+  .masthead,
+  .mastfoot,
+  .cover-container{
+    width :750px;
+  }
+}

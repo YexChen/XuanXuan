@@ -1,0 +1,149 @@
+/* 全局设置 */
+body{
+	height : 100%;
+	text-align : center;
+}
+
+
+
+
+
+
+/*细节设置 */
+.page-wrapper{
+		  -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 5px rgba(0,0,0,.5);
+}
+
+
+
+
+
+/*导航条设置 */
+
+.navbar-wrapper,
+.navbar{
+	margin : 0
+}
+
+.navbar-header{
+	margin : auto;
+	vertical-align: center;
+}
+
+a,
+a:hover,
+a:focus{
+	color : #333333;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus{
+	background-color : #f2f2f2;
+}
+
+.nav > li,
+.collapse > ul > form > .form-group > input,
+.collapse > ul > form > button,
+.navbar-brand,{
+	margin : 10px;
+}
+
+.navbar-header > button{
+	margin-top : 18px;
+}
+/* 修改icon-bar 的颜色，不然看不见 */
+.icon-bar{
+	background-color : black;
+}
+
+.form-group > input{
+	width : 80%;
+	margin : 0 auto;
+}
+
+.dropdown-menu{
+	margin : 0 auto;
+}
+
+
+/* 图片轮播设置 */
+.carousel-inner > .item > img{
+	height : 500px;
+	min-width : 100%;
+}
+
+.carousel-inner > .item > a > img{
+	height : 500px;
+	min-width : 100%;	
+}
+
+
+/* 重点推荐设置 */
+.page-recommend > .container > .row > .col-sm-4 > img{
+	margin : auto;
+}
+
+@media(min-width : 768px){
+.page-recommend > .container > .row > .col-sm-4 > a{
+	margin-top : 45px;
+}
+}
+
+@media(min-width : 992px){
+.page-recommend > .container > .row > .col-sm-4 > a{
+	margin-top : 65px;
+}
+}
+
+/* 主要栏目板块设置 */
+.page-topic > .container > .row > .col-md-10 > .col-sm-3 > img{
+	margin : auto;
+}
+
+.page-topic > .container > .row > .col-md-10 > .col-sm-3{
+	margin-bottom : 50px;
+}
+
+
+.page-topic > .container > .row > .col-md-2 > ul > li{
+	margin : 20px;
+}
+
+.page-topic > .container > .row > .col-md-2 > ul > li >a:hover,
+.page-topic > .container > .row > .col-md-2 > ul > li >a:focus{
+	padding-bottom : 2px solid #a6a6a6;
+}
+
+.page-topic > .container > .row > .col-md-2 > ul > li >a:hover,
+.page-topic > .container > .row > .col-md-2 > ul > li >a:focus,
+.page-topic > .container > .row > .col-md-2 > ul > li >a{
+	color : #666666;
+}
+
+.back-to-top{
+	float : right;
+	margin-right : 60px;
+}
+
+@media(min-width : 992px){	
+.page-topic > .container > .row > .col-md-2{
+	border-left : 2px solid #737373;
+}
+}
+
+
+/* 页脚设置 */
+.page-foot > lead > a,
+.page-foot > lead > a:hover,
+.page-foot > lead > a:focus{
+	color : blue;
+}
+
+@media(max-width : 768px){
+	.page-foot{
+		width : 200px;
+		text-align : center;
+		margin : 0px auto;
+		}
+}

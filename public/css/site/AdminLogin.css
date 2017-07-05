@@ -1,0 +1,66 @@
+/*全局设置*/
+body{
+	font-family:黑体;
+	vertical-align: center;
+	text-align : center;
+}
+
+/*细节设置*/
+
+
+
+
+/*导航条设置*/
+.navbar-header
+.navbar-brand{
+	margin : 0 auto;
+}
+
+.navbar-nav{
+	margin: 0 auto;
+}
+
+.navbar-nav > .dropdown{
+	height : 100%;
+}
+
+.dropdown{
+	margin : 0 auto;
+}
+/* form设置 */
+.page-form{
+	width : 90%;
+	margin : 0 auto;
+}
+
+
+.form-group,
+#mylogin > .btn,
+#myregist > .btn
+{
+	margin-top :  20px;
+}
+
+@media(min-width : 768px){
+	.page-form > .container{
+		width : 60%;
+		margin : 0 auto;
+	}
+
+	.form-group,
+	#mylogin> .btn,
+	#myregist > .btn{
+		margin-top : 23px;
+	}
+}
+
+@media(min-width : 992px){
+	.page-form > .container{
+		width : 45%;
+	}
+}
+/*页面底部设置 大屏幕fix算了？*/
+.page-foot{
+	margin-top : 50px;
+	font-family : 微软雅黑;
+}

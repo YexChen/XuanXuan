@@ -1,0 +1,134 @@
+
+/*  全局设置预留位置 */
+.body{
+  padding-bottom:40px;
+  color : #5a5a5a;
+}
+
+
+
+/* 导航条设置预留位置 */
+.navbar-wrapper{
+  position : absolute;
+  top : 0px;
+  left : 0;
+  right : 0;
+  bottom : 0;
+  z-index : 20;
+  height : 80px;
+}
+
+.navbar{
+  border-radius : 5px 5px 5px 5px;
+}
+.navbar-wrapper > .container{
+  padding-left : 0px;
+  padding-right : 0px;
+}
+
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left : 15px;
+}
+
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+
+
+/* 旋转木马设置 */
+.carousel{
+	height : 500px;
+	margin-bottom : 60px;
+}
+
+.carousel .item{
+	height : 500px;
+	background-color : #777;
+}
+
+.carousel-caption{
+	z-index : 10;
+  margin-bottom : 0px;
+}
+
+.carousel-inner{
+  margin-top : 30px;
+}
+
+
+.carousel-inner > .item > img{
+	position : absolute;
+  top :0;
+  left : 0;
+	height : 500px;
+  min-width : 100%;
+}
+
+/* 主要文本显示 */
+.marketing
+.col-sm-4{
+  text-align : center;
+  margin-bottom : 20px;
+}
+
+.marketing
+h2{
+  font-weight : normal;
+}
+
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.featurette-divider{
+  margin : 80px 0;
+}
+
+.featurette-heading {
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -1px;
+  font-size : 45px;
+}
+
+.row > .col-sm-7{
+  margin-top : 80px;
+}
+
+.left,
+.right{
+  display : inline-block;
+}
+
+.mastfoot{
+  margin-bottom: 30px;
+}
+
+/* 响应式布局 */
+  @media(min-width : 768px){
+    .carousel-inner{
+      margin-top : 0px;
+    }
+    .row{
+      vertical-align: center;
+      text-align : center;
+    }
+    .col-lg-4 > a{
+      margin-bottom: 20px;
+    }
+  }
+  @media(min-width : 992px)
+  {
+    .navbar-wrapper{
+      margin-top : 20px;
+    }
+    .carousel-inner{
+      margin-top : 0px;
+}
+    .carousel-caption{
+      margin-bottom : 50px;
+}
+  }

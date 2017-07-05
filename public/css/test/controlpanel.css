@@ -1,0 +1,85 @@
+/* 全局设置 */
+#maincontent{
+	padding-top : 50px;
+}
+
+
+
+
+
+/*导航条设置 */
+.navbar{
+	background-color:  #262626;
+}
+
+.navbar-brand{
+	color : #b3b3b3
+}
+
+.navbar-right > li > a,
+.navbar-right > li > a:focus{
+	color : #b3b3b3;
+	background-color : transparent;
+}
+
+.navbar-right > li > a:hover{
+	background-color : transparent;
+	color : #e6e6e6;
+}
+
+
+/* 左侧目录测试 */
+.sidebar{
+	position : fixed;
+	background-color : #f2f2f2;
+	padding-left : 0;
+	padding-right : 0;
+	height : 100%;
+}
+
+.nav-sidebar{
+	padding-top : 20px;
+}
+
+.nav-sidebar > ul > li{
+	padding-top : 4px;
+}
+
+.nav-sidebar > ul > li > a{
+	text-indent: 5px;
+}
+
+.nav-sidebar > ul > li > a:hover{
+	color : #ff944d;
+}
+
+.nav-sidebar > ul > li > .active,
+.nav-sidebar > ul > li > .active:hover{
+	background-color :  #7070db;
+	color : #fff;
+	}
+
+/* 右侧主要文本 */
+.col-md-10{
+	padding-left : 40px;
+	padding-right : 40px;
+
+}
+
+.col-md-10 > h1,
+.col-md-10 > h2{
+	text-indent : 0.5em;
+}
+
+.col-md-3{
+	text-align : center;
+}
+
+.col-md-3 > lead{
+	font-size : 18px;
+}
+
+.col-md-3 > lead >small{
+	font-size : 14px;
+	color : #808080;
+}
